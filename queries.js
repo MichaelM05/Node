@@ -46,6 +46,21 @@ function methodDB(){
     }
 
 
+    this.update = function(data, response){
+        connection.get(function(er,cn){
+            cn.query('update inventario set ? where id = ?',[data,data.id],function(error,result){
+                cn.release();
+                if(error){
+                    response.send({ Estado : 'error'});
+                }else {
+                    response.send({ Estado : 'actualizado'});
+                }
+            });
+        })
+
+    }
+
+
 }
 
 module.exports = new methodDB();

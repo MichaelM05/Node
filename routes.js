@@ -14,7 +14,12 @@ function http(){
         app.post('/inventario/',function(requestt,responsee){
             
              queries.insert(requestt.body,responsee);
-         })
+        })
+
+        app.put('/inventario/',function(requestt,responsee){
+            
+             queries.update(requestt.body,responsee);
+        })
     }
 }
 
