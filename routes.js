@@ -20,6 +20,13 @@ function http(){
             
              queries.update(requestt.body,responsee);
         })
+
+        app.delete('/inventario/:id/',function(requestt,responsee){
+            
+             queries.delete(requestt.params.id,responsee);
+        })
+
+
     }
 }
 

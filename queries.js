@@ -60,6 +60,19 @@ function methodDB(){
 
     }
 
+    this.delete = function(id, response){
+        connection.get(function(er,cn){
+            cn.query('delete from inventario where id = ?',id,function(error,result){
+                cn.release();
+                if(error){
+                    response.send({ Estado : 'error'});
+                }else {
+                    response.send({ Estado : 'eliminado'});             }
+            });
+        })
+
+    }
+
 
 }
 
