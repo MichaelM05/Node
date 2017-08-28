@@ -14,6 +14,7 @@ const appRoutes : Routes = [
         {path: '', redirectTo: 'list', pathMatch: 'full' },
         {path: 'list', component: InventoryList },
         {path: 'detail', component: InventoryDetail },
+        {path: 'detail/:id', component: InventoryDetail },
 
 ]  },
     {path: 'client', component: ClientComponent },
