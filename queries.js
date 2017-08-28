@@ -57,7 +57,6 @@ function methodDB(){
                 }
             });
         })
-
     }
 
     this.delete = function(id, response){

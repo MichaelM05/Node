@@ -13,6 +13,5 @@ connection.iniciar();
 routes.config(app);
 
 var server = app.listen(8000, function(){
-
     console.log('Escuchandoe el puerto  ', server.address().port);
 });
