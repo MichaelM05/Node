@@ -26,7 +26,8 @@ import { InventoryDetail } from './inventory/inventory-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
