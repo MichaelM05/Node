@@ -1,10 +1,11 @@
 export class Inventory {
 
-    constructor(
+    constructor(        
         public id: number,
-        public product: string,
-        public price: number,
-        public supplier: string,
-        public existence: number
+        public producto: string,
+        public existencia: number,
+        public precio: number,
+        public proveedor: string
+        
     ){}
 }

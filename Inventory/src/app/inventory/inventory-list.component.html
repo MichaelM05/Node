@@ -13,6 +13,7 @@
                         <th>Existence</th>
                         <th>Price</th>
                         <th>Supplier</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -22,6 +23,8 @@
                         <th>{{ item.existencia }}</th>
                         <th>{{ item.precio }}</th>
                         <th>{{ item.proveedor }}</th>
+                        <td><button class="btn btn-sm btn-primary" (click)="select(item)">Select</button></td>
+                        <td><button class="btn btn-sm btn-primary" (click)="update(item)">Update</button></td>
                     </tr>
                 </tbody>
             </table>

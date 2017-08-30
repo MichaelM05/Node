@@ -32,11 +32,15 @@ function methodDB(){
 
 
     this.insert = function(data, response){
+        console.log('------');
+        console.log(data);
+        console.log('------');
         connection.get(function(er,cn){
             cn.query('insert into inventario set ?', data, function(error,result){
                 cn.release();
                 if(error){
-                    response.send({ Estado : 'error'});
+                    console.log(error);
+                    response.send({ Estado : 'error' });
                 }else {
                     response.send({ Estado : 'insertado'});
                 }

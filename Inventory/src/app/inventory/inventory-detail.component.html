@@ -1,1 +1,34 @@
-<h1>Detail</h1>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            {{ title }}
+        </div>
+        <div class="card-block">
+            <form novalidate [formGroup]="form">
+                <div class="form-group">
+                    <label for="">Id</label>
+                    <input class="form-control" type="number" name="" id="txtProduct" formControlName="id">
+                </div>
+                <div class="form-group">
+                    <label for="">Producto</label>
+                    <input class="form-control" type="text" name="" id="txtProduct" formControlName="producto">
+                </div>
+                <div class="form-group">
+                    <label for="">Quantity</label>
+                    <input class="form-control" type="number" name="" id="txtExistence" formControlName="existencia">
+                </div>
+                <div class="form-group">
+                    <label for="">Supplier</label>
+                    <input class="form-control" type="text" name="" id="txtPrice" formControlName="proveedor">
+                </div>
+                <div class="form-group">
+                    <label for="">Price</label>
+                    <input class="form-control" type="number" name="" id="txtSupplier" formControlName="precio">
+                </div>
+                <button class="btn btn-default" (click)="saveInventory()">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
